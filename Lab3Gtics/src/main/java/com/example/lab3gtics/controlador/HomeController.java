@@ -10,7 +10,8 @@ public class HomeController {
     @GetMapping("/")
     @ResponseBody
     public String paginaPrincipal(){
-        return "Mensaje motivador: Siuuu - CR7 THE BEST";
+        return "Mensaje motivador: Todo en esta vida hay solución, solo no hay solución para LA MUERTE, la vida es BELLA.";
+
     }
 
 }

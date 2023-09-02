@@ -25,7 +25,10 @@
             <td th:text="${info.index + 1}"></td>
             <td th:text="${estadio.nombre}"></td>
             <td th:text="${estadio.provincia}"></td>
-            <td th:text="${estadio.club}"></td>
+            <td>
+                <span th:if="${estadio.club == null}">No tiene propietario</span>
+                <span th:unless="${estadio.club == null}" th:text="${estadio.club}"></span>
+            </td>
 
             <td><a class="btn btn-danger" th:href="@{'/estadio/borrar?id=' + ${estadio.idestadio}}">Borrar</a></td>
         </tr>
